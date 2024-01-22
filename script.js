@@ -22,8 +22,13 @@ console.log(currentHour);
     for (let hour = workdayStartHour; hour <= workdayEndHour; hour++) {
       const timeBlock = $('<div>').addClass('row time-block');
 console.log(timeBlock);
- 
-
-   });
-  
+  // Create hour element
+  const hourElement = $('<div>').addClass('col-md-1 hour');
+  hourElement.text(dayjs().hour(hour).format('hA'));
+}
+}
+// Call the functions
+displayCurrentDate();
+createTimeBlocks();
+});
   
