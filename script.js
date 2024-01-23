@@ -37,11 +37,16 @@ console.log(timeBlock);
       } else {
         descriptionElement.addClass('future');
       }
-      // Retrieve saved text from localStorage and display it in the description textareaS
-      const savedText = localStorage.getItem(`hour-${hour}`);
-      if (savedText) {
-        descriptionElement.val(savedText);
-      }
+      
+      
+      
+    }
+ 
+
+     
+    
+    // Append time block to schedule container
+      scheduleContainer.append(timeBlock);
 }
 }
 // Call the functions
